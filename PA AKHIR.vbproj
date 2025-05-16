@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B54B6B5D-38D0-4F3A-8F95-621E0B9EB063}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PA_AKHIR.My.MyApplication</StartupObject>
+    <RootNamespace>PA_AKHIR</RootNamespace>
+    <AssemblyName>PA AKHIR</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PA AKHIR.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PA AKHIR.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=9.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector NET 9.3\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBeliBarang.Designer.vb">
+      <DependentUpon>FormBeliBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBeliBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditBarang.Designer.vb">
+      <DependentUpon>FormEditBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporan.Designer.vb">
+      <DependentUpon>FormLaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLihatStok.Designer.vb">
+      <DependentUpon>FormLihatStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLihatStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegis.Designer.vb">
+      <DependentUpon>FormRegis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahBarang.Designer.vb">
+      <DependentUpon>FormTambahBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtamaPelanggan.Designer.vb">
+      <DependentUpon>FormUtamaPelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtamaPelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtamaPemilik.Designer.vb">
+      <DependentUpon>FormUtamaPemilik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtamaPemilik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleCetak.vb" />
+    <Compile Include="ModuleKoneksi.vb" />
+    <Compile Include="ModuleLaporan.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBeliBarang.resx">
+      <DependentUpon>FormBeliBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditBarang.resx">
+      <DependentUpon>FormEditBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporan.resx">
+      <DependentUpon>FormLaporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLihatStok.resx">
+      <DependentUpon>FormLihatStok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegis.resx">
+      <DependentUpon>FormRegis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahBarang.resx">
+      <DependentUpon>FormTambahBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUtamaPelanggan.resx">
+      <DependentUpon>FormUtamaPelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUtamaPemilik.resx">
+      <DependentUpon>FormUtamaPemilik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liatstokrek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formregis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formregis %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formbelibarang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desain tanpa judul %284%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formbelibarangrek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formbelibaranglagirek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belibarang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belibaranglagirek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formpunyapemilik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formutamapelanggan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taqmbahbarang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editbarang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editbarang1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tambahbarang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formloginlagi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formregislagi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liatlaporanlagi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liatlaporanlagi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laporanlagi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pelanggan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belibarang1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utamapemilik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utamanpelanggan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\punyapelanggan.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
